@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Teste JavaScript</title>
+	<meta charset="utf-8">
+	<script>
+		var quebrada = false;
+		function mudaLampada(tipo)
+		{
+			if (quebrada==false)
+			{
+				if (tipo == 1)
+				{
+					arquivo = "../Curso-Guanabara/projeto-glass-html5/_imagens/lampada-acesa.jpg";
+				}
+				if (tipo == 2)
+				{
+					arquivo = "../Curso-Guanabara/projeto-glass-html5/_imagens/lampada-apagada.jpg";
+				}
+				if (tipo == 3)
+				{
+					arquivo = "../Curso-Guanabara/projeto-glass-html5/_imagens/lampada-quebrada.jpg";
+					quebrada = true;
+				}
+				document.getElementById("luz").src = arquivo;
+			}
+		}
+
+	</script>
+</head>
+<body>
+<h1>Ascenda a lâmpada</h1>
+<img src="../Curso-Guanabara/projeto-glass-html5/_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('1')" onmouseout="mudaLampada(2)" onclick="mudaLampada(3)">
+
+
+
+
+</body>
+</html>

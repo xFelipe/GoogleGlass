@@ -1,0 +1,17 @@
+/*Comentário*/
+body
+{
+	background-color:#00BFFF;
+}
+/*Código para modificar a fonte dos parágrafos. Caso uma falhe, tentará usar a da frente
+#id		- Melhor para linha
+.class 	- Melhor para Bloco
+p[id="paragrafo"]*/
+#paragrafo
+{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:25px;
+	color:#00FF00;
+	font-weight:bold;/*negrito*/
+}
+
